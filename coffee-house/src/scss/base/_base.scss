@@ -1,3 +1,20 @@
+@font-face {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    src: url('../../assets/fonts/Inter-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    src: url('../../assets/fonts/Inter-SemiBold.ttf') format('truetype');
+}
+
 html {
     scroll-behavior: smooth;
+}
+
+body {
+    @extend %font-primary;
+    font-weight: 600;
 }
