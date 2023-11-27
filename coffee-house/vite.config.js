@@ -11,8 +11,8 @@ export default defineConfig({
 
     rollupOptions: {
       input: {
-        index: 'index.html',
-        menu: 'menu.html',
+        index: 'pages/home/index.html',
+        menu: 'pages/menu/index.html',
       },
     },
   },
