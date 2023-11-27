@@ -18,4 +18,5 @@ body {
     @extend %font-primary;
     font-weight: 600;
     color: $color-text-dark;
+    background-color: $color-bg-body;
 }
