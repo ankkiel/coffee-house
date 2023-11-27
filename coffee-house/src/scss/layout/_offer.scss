@@ -1,0 +1,53 @@
+.offer__container {
+    background-image: url(../../assets/images/img-hero.jpg);
+    border-radius: 40px;
+
+    padding-top: 100px;
+    padding-left: 100px;
+    padding-bottom: 100px;
+}
+
+.offer__content {
+    width: 530px;
+}
+
+.offer__title {
+    margin: 0;
+    color: $color-text-light;
+    @extend %heading-1;
+    margin-bottom: 40px;
+}
+
+.offer__title-accent {
+    color: $color-text-accent;
+    @extend %heading-1-accent;
+}
+
+.offer__description {
+    margin: 0;
+    margin-bottom: 46px;
+    font-weight: 400;
+    line-height: 150%;
+    color: $color-text-light;
+}
+
+.offer__link {
+    position: relative;
+    display: inline-block;
+    padding: 20px 78px;
+    border-radius: 100px;
+    background-color: $color-bg-body;
+    color: $color-text-dark;
+    text-decoration: none;
+    &::after {
+        position: absolute;
+        content: url(../../assets/images/cup-coffee.svg);
+        position: absolute;
+        width: 100%;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+    }
+    &:hover::after {
+        opacity: 1;
+    }
+}
