@@ -1,3 +1,23 @@
 %font-primary {
     font-family: 'Inter', sans-serif;
 }
+
+%heading-1 {
+    @include font(72px, 600, 105%);
+}
+
+%heading-1-accent {
+    font-style: italic;
+}
+
+%heading-2 {
+    @include font(60px, 600, 125%);
+}
+
+%heading-2-accent {
+    font-style: italic;
+}
+
+%heading-3 {
+    @include font(24px, 600, 125%);
+}

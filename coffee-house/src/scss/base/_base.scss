@@ -17,4 +17,5 @@ html {
 body {
     @extend %font-primary;
     font-weight: 600;
+    color: $color-text-dark;
 }
