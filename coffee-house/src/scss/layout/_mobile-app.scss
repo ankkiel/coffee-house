@@ -1,0 +1,77 @@
+.mobile-app {
+    padding-bottom: 40px;
+}
+
+.mobile-app__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mobile-app__title {
+    margin: 0;
+    @extend %heading-2;
+    margin-bottom: 40px;
+}
+
+.mobile-app__title-accept {
+    @extend %heading-2-accent;
+    color: $color-text-accent;
+}
+
+.mobile-app__description {
+    margin: 0;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.mobile-app__item {
+    flex: 0 1 630px;
+}
+
+.mobile-app__button-link {
+    display: flex;
+    flex-shrink: 0;
+
+    width: 200px;
+    gap: 8px;
+    border-radius: 100px;
+
+    border: 1px solid $color-border-dark;
+    padding: 12px 20px;
+    color: $color-text-dark;
+
+    text-decoration: none;
+    transition: all 1s;
+
+    box-sizing: border-box;
+    &:hover {
+        background-color: $color-border-dark;
+        color: $color-text-light;
+        .mobile-app__icon path {
+            fill: currentColor;
+        }
+    }
+}
+
+
+
+.mobile-app__buttons {
+    display: flex;
+    column-gap: 20px;
+}
+
+.mobile-app__text-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    margin: 0;
+
+    @include font(10px, 600, 140%);
+}
+
+.mobile-app__name-store {
+    font-size: 16px;
+    line-height: 150%;
+}
