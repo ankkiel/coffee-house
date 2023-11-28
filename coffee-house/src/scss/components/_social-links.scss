@@ -1,0 +1,39 @@
+.social-links {
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+  }
+
+.social-links__item {
+    cursor: pointer;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    border: 1px solid $color-border-light;
+    color: $color-text-light;
+
+    transition: all 1s;
+}
+
+.social-links__item {
+    stroke: currentColor;
+    fill: currentColor;
+}
+
+.social-links__item:hover {
+    background: $color-text-light;
+}
+
+
+.social-links__item:hover path {
+    stroke: $color-text-dark;
+}
