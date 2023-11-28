@@ -2,6 +2,10 @@
     font-family: 'Inter', sans-serif;
 }
 
+%font-accent {
+    font-family: 'Inter Italic', sans-serif;
+}
+
 %heading-1 {
     @include font(72px, 600, 105%);
 }

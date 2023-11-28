@@ -1,13 +1,8 @@
 @font-face {
-    font-family: 'Inter-Regular', sans-serif;
-    font-weight: 400;
-    src: url('../../assets/fonts/Inter-Regular.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter Italic', sans-serif;
     font-weight: 600;
-    src: url('../../assets/fonts/Inter-SemiBold.ttf') format('truetype');
+    src: url('../../assets/fonts/Inter-SemiBoldItalic.woff2') format('woff2');
+    font-display: swap;
 }
 
 html {
