@@ -14,6 +14,11 @@
         padding: 20px;
         height: 155px;
     }
+
+    &:hover img {
+        transform: scale(1);
+        
+    }
 }
 
 .menu-card__title, .menu-card__price {
@@ -46,8 +51,4 @@
 
     transform: scale(1.1);
     transition: transform 0.5s;
-    &:hover {
-        transform: scale(1);
-        
-    }
 }
