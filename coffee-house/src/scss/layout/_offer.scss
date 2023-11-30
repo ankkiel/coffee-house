@@ -33,22 +33,33 @@
 }
 
 .offer__link {
-    position: relative;
-    display: inline-block;
-    padding: 23px 78px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+
+    width: 200px;
+    padding: 20px;
     border-radius: 100px;
     background-color: $color-bg-body;
     color: $color-text-dark;
     text-decoration: none;
-    &::after {
-        position: absolute;
-        content: url(../../assets/images/cup-coffee.svg);
-        position: absolute;
-        width: 100%;
+    box-sizing: border-box;
+
+    img {
         opacity: 0;
         transition: opacity 0.3s ease-in-out;
     }
-    &:hover::after {
+    span {
+        margin-right: -28px;
+        transition: margin-right 0.3s ease-in-out;
+    }
+
+    &:hover img {
         opacity: 1;
+    }
+
+    &:hover span {
+        margin-right: 0;
     }
 }

@@ -37,10 +37,11 @@
 .navigation__btn {
     position: relative;
     display: flex;
+    align-items: end;
+
     text-decoration: none;
     color: $color-text-dark;
     gap: 8px;
     margin-bottom: 12px;
     list-style: none;
-    align-items: baseline;
 }
