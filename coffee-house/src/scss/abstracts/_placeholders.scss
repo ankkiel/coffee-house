@@ -25,3 +25,19 @@
 %heading-3 {
     @include font(24px, 600, 125%);
 }
+
+%medium-body {
+    @include font(16px, 400, 150%);
+}
+
+%caption-body {
+    @include font(10px, 600, 140%);
+}
+
+%link-btn-action {
+    @include font(16px, 600, 150%);
+}
+
+%burger-link {
+    @include font(32px, 600, 125%);
+}

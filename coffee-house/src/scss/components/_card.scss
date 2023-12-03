@@ -15,9 +15,8 @@
 
 .card__description {
     margin: 0;
-    font-weight: 400;
     margin-bottom: 16px;
-    line-height: 150%;
+    @extend %medium-body;
 }
 
 .card__price {

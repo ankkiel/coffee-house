@@ -21,9 +21,8 @@
 
 .mobile-app__description {
     margin: 0;
-    font-weight: 400;
+    @extend %medium-body;
     margin-bottom: 40px;
-    line-height: 150%;
 }
 
 .mobile-app__item {
@@ -69,10 +68,9 @@
     padding: 0;
     margin: 0;
 
-    @include font(10px, 600, 140%);
+    @extend %caption-body;
 }
 
 .mobile-app__name-store {
-    font-size: 16px;
-    line-height: 150%;
+    @extend %link-btn-action;
 }

@@ -11,6 +11,7 @@
 }
 
 .navigation__link {
+    @extend %link-btn-action;
     color: $color-text-dark;
     text-decoration: none;
     position: relative;
