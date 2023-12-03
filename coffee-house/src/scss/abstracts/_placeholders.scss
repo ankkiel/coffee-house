@@ -8,6 +8,11 @@
 
 %heading-1 {
     @include font(72px, 600, 105%);
+
+    @include media-mobile {
+        font-size: 42px;
+        line-height: 115%;
+    }
 }
 
 %heading-1-accent {
@@ -16,6 +21,11 @@
 
 %heading-2 {
     @include font(60px, 600, 125%);
+
+    @include media-mobile {
+        font-size: 32px;
+    }
+
 }
 
 %heading-2-accent {
