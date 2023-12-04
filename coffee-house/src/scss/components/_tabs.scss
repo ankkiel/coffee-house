@@ -3,6 +3,9 @@
     justify-content: center;
     gap: 16px;
     margin-bottom: 40px;
+    @include media-mobile {
+        gap: 8px;
+    }
 }
 
 .tabs__item {
@@ -16,17 +19,18 @@
     padding: 8px 16px 8px 8px;
     border-radius: 100px;
 
-    &--active, &:hover {
+    &--active {
         background-color: $color-bg-container;
         color: $color-text-light;
         border: 1px solid $color-border-dark;
     }
-
-    &:hover {
-        transition: all 1s;
-        background-color: $color-bg-container;
-        color: $color-text-light;
-        border: 1px solid $color-border-dark;
+    @include hover-desktop {
+        &:hover {
+            transition: all 1s;
+            background-color: $color-bg-container;
+            color: $color-text-light;
+            border: 1px solid $color-border-dark;
+        }
     }
 
     background-color: transparent;

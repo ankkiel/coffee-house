@@ -6,10 +6,18 @@
 .footer__inner {
     display: flex;
     gap: 100px;
+    justify-content: center;
+    flex-wrap: wrap;
     background-color: $color-bg-container;
     padding: 100px;
     border-radius: 40px;
-    width: 100%;
+    @include media-tablet {
+        padding-left: 60px;
+    }
+    @include media-mobile {
+        padding: 60px 16px;
+        gap: 40px;
+    }
 }
 
 .footer__container {

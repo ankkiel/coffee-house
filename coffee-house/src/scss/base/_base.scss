@@ -11,7 +11,7 @@ html {
 
 body {
     @extend %font-primary;
-    font-weight: 600;
+  
     color: $color-text-dark;
     background-color: $color-bg-body;
 }
@@ -24,4 +24,8 @@ body {
     height: 1px;
     
     margin: -1px;
+}
+
+img {
+    max-width: 100%;
 }

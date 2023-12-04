@@ -8,9 +8,13 @@
     margin-bottom: 6px;
 
     list-style: none;
+    @include media-tablet {
+        display: none;
+    }
 }
 
 .navigation__link {
+    @extend %link-btn-action;
     color: $color-text-dark;
     text-decoration: none;
     position: relative;
@@ -28,20 +32,9 @@
         transform: scaleX(0);
         transition: transform 0.3s ease-in-out;
     }
-    &:hover::before {
-        transform: scaleX(1);      
+    @include hover-desktop {
+        &:hover::before {
+            transform: scaleX(1);      
+        }
     }
-
-}
-
-.navigation__btn {
-    position: relative;
-    display: flex;
-    align-items: end;
-
-    text-decoration: none;
-    color: $color-text-dark;
-    gap: 8px;
-    margin-bottom: 12px;
-    list-style: none;
 }

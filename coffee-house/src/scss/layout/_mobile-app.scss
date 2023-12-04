@@ -4,8 +4,13 @@
 
 .mobile-app__container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 100px;
+    @include media-mobile {
+        gap: 38px;
+    }
 }
 
 .mobile-app__title {
@@ -21,13 +26,30 @@
 
 .mobile-app__description {
     margin: 0;
-    font-weight: 400;
+    @extend %medium-body;
     margin-bottom: 40px;
-    line-height: 150%;
 }
 
 .mobile-app__item {
-    flex: 0 1 630px;
+    flex-basis: 630px;
+    @include media-tablet {
+        flex-basis: 100%;
+        &:last-child {
+            padding: 0 29px;
+            @include media-mobile {
+                padding: 0;
+            }
+        }
+    }
+}
+
+.mobile-app__image {
+    width: 630px;
+    height: 630px;
+    @include media-mobile {
+        width: 348px;
+        height: 348px;
+    }
 }
 
 .mobile-app__button-link {
@@ -46,11 +68,13 @@
     transition: all 1s;
 
     box-sizing: border-box;
-    &:hover {
-        background-color: $color-border-dark;
-        color: $color-text-light;
-        .mobile-app__icon path {
-            fill: currentColor;
+    @include hover-desktop {
+        &:hover {
+            background-color: $color-border-dark;
+            color: $color-text-light;
+            .mobile-app__icon path {
+                fill: currentColor;
+            }
         }
     }
 }
@@ -59,7 +83,8 @@
 
 .mobile-app__buttons {
     display: flex;
-    column-gap: 20px;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .mobile-app__text-inner {
@@ -69,10 +94,9 @@
     padding: 0;
     margin: 0;
 
-    @include font(10px, 600, 140%);
+    @extend %caption-body;
 }
 
 .mobile-app__name-store {
-    font-size: 16px;
-    line-height: 150%;
+    @extend %link-btn-action;
 }

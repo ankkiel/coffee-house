@@ -16,6 +16,9 @@
 .about__images {
     display: flex;
     gap: 40px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .about__column {
@@ -35,18 +38,29 @@
     &--large {
         width: 660px;
         height: 590px;
+        @include media-tablet {
+            width: 100%;
+        }
     }
 
     &--little {
         width: 660px;
         height: 430px;
+        @include media-tablet {
+            display: none;
+        }
     }
 }
 
 .about__image {
     transform: scale(1.1);
     transition: transform .5s;
-    &:hover {
-        transform: scale(1);
+    @include hover-desktop {
+        &:hover {
+            transform: scale(1);
+        }
+    }
+    @include media-mobile {
+        transform: scale(2.1);
     }
 }

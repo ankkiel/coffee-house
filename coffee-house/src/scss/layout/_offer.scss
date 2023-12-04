@@ -5,10 +5,16 @@
     padding-top: 100px;
     padding-left: 100px;
     padding-bottom: 100px;
+    @include media-tablet {
+        padding-left: 60px;
+    }
+    @include media-mobile {
+        padding: 60px 16px;
+    }
 }
 
 .offer__content {
-    width: 530px;
+    max-width: 530px;
 }
 
 .offer__title {
@@ -27,8 +33,7 @@
 .offer__description {
     margin: 0;
     margin-bottom: 40px;
-    font-weight: 400;
-    line-height: 150%;
+    @extend %medium-body;
     color: $color-text-light;
 }
 
@@ -49,17 +54,25 @@
     img {
         opacity: 0;
         transition: opacity 0.3s ease-in-out;
+        @include media-tablet {
+            opacity: 1;
+        }
     }
     span {
+        @extend %link-btn-action;
         margin-right: -28px;
         transition: margin-right 0.3s ease-in-out;
+        @include media-tablet {
+            margin-right: 0;
+        }
     }
+    @include hover-desktop {
+        &:hover img {
+            opacity: 1;
+        }
 
-    &:hover img {
-        opacity: 1;
-    }
-
-    &:hover span {
-        margin-right: 0;
+        &:hover span {
+            margin-right: 0;
+        }
     }
 }

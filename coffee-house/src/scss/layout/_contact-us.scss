@@ -4,20 +4,23 @@
     margin-bottom: 40px;
     margin-top: 33px;
     @extend %heading-3;
+    @include media-tablet {
+        margin-top: 0;
+    }
 }
 
-.contacts-us__list {
+.contact-us__list {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-.contacts-us__link {
+.contact-us__link {
     position: relative;
     display: inline-flex;
     gap: 9px;
     
-    line-height: 150%;
+    @extend %link-btn-action;
     color: $color-text-light;
     text-decoration: none;
     &::before {
@@ -34,11 +37,13 @@
         transform: scaleX(0);
         transition: transform 0.5s ease-in-out;
     }
-    &:hover::before {
-        transform: scaleX(1);      
+    @include hover-desktop {
+        &:hover::before {
+            transform: scaleX(1);      
+        }
     }
 }
 
-.contacts-us__item {
-    margin-bottom: 19px;
+.contact-us__item:not(:last-child) {
+    margin-bottom: 16px;
 }
