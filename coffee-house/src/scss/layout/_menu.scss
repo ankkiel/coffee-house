@@ -8,13 +8,11 @@
 
     max-width: 800px;
     text-align: center;
-    @extend %heading-1;
-    font-size: 60px;
-    line-height: 125%;
+    @extend %heading-2;
 }
 
 .menu__title-accent {
-    @extend %heading-1-accent;
+    @extend %heading-2-accent;
     color: $color-text-accent;
 }
 
