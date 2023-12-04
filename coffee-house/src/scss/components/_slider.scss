@@ -4,6 +4,9 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    @media (max-width: 766px) {
+        justify-content: center;
+    }
 }
 
 .slider__btn {
@@ -16,6 +19,9 @@
     border-radius: 100px;
     border: 1px solid $color-border-dark;
     transition: all 0.3s ease 0s;
+    @media (max-width: 766px) {
+        display: none;
+    }
 }
 
 .slider__btn--left {

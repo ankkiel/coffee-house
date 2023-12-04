@@ -8,6 +8,9 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 100px;
+    @include media-mobile {
+        gap: 38px;
+    }
 }
 
 .mobile-app__title {
@@ -33,6 +36,9 @@
         flex-basis: 100%;
         &:last-child {
             padding: 0 29px;
+            @include media-mobile {
+                padding: 0;
+            }
         }
     }
 }
@@ -40,6 +46,10 @@
 .mobile-app__image {
     width: 630px;
     height: 630px;
+    @include media-mobile {
+        width: 348px;
+        height: 348px;
+    }
 }
 
 .mobile-app__button-link {
@@ -71,7 +81,8 @@
 
 .mobile-app__buttons {
     display: flex;
-    column-gap: 20px;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .mobile-app__text-inner {

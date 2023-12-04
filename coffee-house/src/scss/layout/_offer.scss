@@ -8,10 +8,13 @@
     @include media-tablet {
         padding-left: 60px;
     }
+    @include media-mobile {
+        padding: 60px 16px;
+    }
 }
 
 .offer__content {
-    width: 530px;
+    max-width: 530px;
 }
 
 .offer__title {
