@@ -19,6 +19,12 @@
         transform: scale(1);
         
     }
+
+    @include media-tablet {
+        &:nth-child(n+5) {
+        display: none;
+        }
+    }
 }
 
 .menu-card__title, .menu-card__price {
