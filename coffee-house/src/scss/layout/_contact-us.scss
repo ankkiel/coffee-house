@@ -4,6 +4,9 @@
     margin-bottom: 40px;
     margin-top: 33px;
     @extend %heading-3;
+    @include media-tablet {
+        margin-top: 0;
+    }
 }
 
 .contact-us__list {
@@ -39,6 +42,6 @@
     }
 }
 
-.contact-us__item {
+.contact-us__item:not(:last-child) {
     margin-bottom: 16px;
 }

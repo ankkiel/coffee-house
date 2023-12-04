@@ -16,6 +16,9 @@
 .about__images {
     display: flex;
     gap: 40px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .about__column {
@@ -35,11 +38,17 @@
     &--large {
         width: 660px;
         height: 590px;
+        @include media-tablet {
+            width: 688px;
+        }
     }
 
     &--little {
         width: 660px;
         height: 430px;
+        @include media-tablet {
+            display: none;
+        }
     }
 }
 

@@ -4,8 +4,10 @@
 
 .mobile-app__container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 100px;
 }
 
 .mobile-app__title {
@@ -26,7 +28,18 @@
 }
 
 .mobile-app__item {
-    flex: 0 1 630px;
+    flex-basis: 630px;
+    @include media-tablet {
+        flex-basis: 100%;
+        &:last-child {
+            padding: 0 29px;
+        }
+    }
+}
+
+.mobile-app__image {
+    width: 630px;
+    height: 630px;
 }
 
 .mobile-app__button-link {

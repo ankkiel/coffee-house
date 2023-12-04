@@ -5,6 +5,9 @@
     padding-top: 100px;
     padding-left: 100px;
     padding-bottom: 100px;
+    @include media-tablet {
+        padding-left: 60px;
+    }
 }
 
 .offer__content {
@@ -48,11 +51,17 @@
     img {
         opacity: 0;
         transition: opacity 0.3s ease-in-out;
+        @include media-tablet {
+            opacity: 1;
+        }
     }
     span {
         @extend %link-btn-action;
         margin-right: -28px;
         transition: margin-right 0.3s ease-in-out;
+        @include media-tablet {
+            margin-right: 0;
+        }
     }
 
     &:hover img {
