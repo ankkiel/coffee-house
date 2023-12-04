@@ -16,3 +16,9 @@
         @content;
     }
 }
+
+@mixin hover-desktop {
+    @media (hover:hover) {
+        @content;
+    }
+}

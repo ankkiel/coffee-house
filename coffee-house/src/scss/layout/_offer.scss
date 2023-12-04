@@ -66,12 +66,13 @@
             margin-right: 0;
         }
     }
+    @include hover-desktop {
+        &:hover img {
+            opacity: 1;
+        }
 
-    &:hover img {
-        opacity: 1;
-    }
-
-    &:hover span {
-        margin-right: 0;
+        &:hover span {
+            margin-right: 0;
+        }
     }
 }

@@ -15,10 +15,12 @@
         height: 155px;
     }
 
+   @include hover-desktop {
     &:hover img {
         transform: scale(1);
         
     }
+   }
 
     @include media-tablet {
         &:nth-child(n+5) {

@@ -68,11 +68,13 @@
     transition: all 1s;
 
     box-sizing: border-box;
-    &:hover {
-        background-color: $color-border-dark;
-        color: $color-text-light;
-        .mobile-app__icon path {
-            fill: currentColor;
+    @include hover-desktop {
+        &:hover {
+            background-color: $color-border-dark;
+            color: $color-text-light;
+            .mobile-app__icon path {
+                fill: currentColor;
+            }
         }
     }
 }

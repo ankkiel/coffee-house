@@ -37,8 +37,10 @@
         transform: scaleX(0);
         transition: transform 0.5s ease-in-out;
     }
-    &:hover::before {
-        transform: scaleX(1);      
+    @include hover-desktop {
+        &:hover::before {
+            transform: scaleX(1);      
+        }
     }
 }
 

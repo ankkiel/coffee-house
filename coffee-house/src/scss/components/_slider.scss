@@ -29,21 +29,25 @@
 
     transform: rotate(180deg);
 
-    &:hover {
-        background: url(../../assets/images/arrow-right-light.svg) 50% 50% no-repeat;
+    @include hover-desktop {
+        &:hover {
+            background: url(../../assets/images/arrow-right-light.svg) 50% 50% no-repeat;
 
-        background-color: $color-border-dark;
-        color: $color-text-light;
+            background-color: $color-border-dark;
+            color: $color-text-light;
+        }
     }
 }
 
 .slider__btn--right {
     background: url(../../assets/images/arrow-right.svg) 50% 50% no-repeat;
-    &:hover {
-        background: url(../../assets/images/arrow-right-light.svg) 50% 50% no-repeat;
-        background-color: $color-border-dark;
-        color: $color-text-light;
-        
+    @include hover-desktop {
+        &:hover {
+            background: url(../../assets/images/arrow-right-light.svg) 50% 50% no-repeat;
+            background-color: $color-border-dark;
+            color: $color-text-light;
+            
+        }
     }
 }
 
