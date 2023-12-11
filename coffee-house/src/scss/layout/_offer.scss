@@ -1,7 +1,11 @@
-.offer__container {
-    background-image: url(../../assets/images/img-hero.jpg);
-    border-radius: 40px;
+.offer__wrapper {
+    overflow: hidden;
+}
 
+.offer__container {
+    position: relative;
+    border-radius: 40px;
+    overflow: hidden;
     padding-top: 100px;
     padding-left: 100px;
     padding-bottom: 100px;
@@ -11,6 +15,17 @@
     @include media-mobile {
         padding: 60px 16px;
     }
+}
+
+.offer__video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    object-fit: cover;
+
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
 
 .offer__content {
