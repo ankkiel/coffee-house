@@ -16,6 +16,13 @@ body {
     background-color: $color-bg-body;
 }
 
+.fix-screen {
+    position: relative;
+    @include media-tablet {
+        overflow: hidden;
+    } 
+}
+
 .visually-hidden {
     position: absolute;
     clip: rect(0 0 0 0);

@@ -28,11 +28,11 @@
               <a href="#contact-us" class="navigation__link">Contact us</a>
             </li>
           </ul>
+          <a href="../menu/index.html" class="navigation__link navigation__link--menu">
+            <span>Menu</span>
+            <img src="../../assets/images/cup-coffee.svg" alt="Cup-coffee">
+          </a>
         </nav>
-        <a href="../menu/index.html" class="header__link">
-          <span>Menu</span>
-          <img src="../../assets/images/cup-coffee.svg" alt="Cup-coffee">
-        </a>
         <button class="header__burger">
           <span class="header__burger-line"></span>
           <span class="header__burger-line"></span>
@@ -44,6 +44,10 @@
         <div class="offer__wrapper wrapper">
           <h1 class="visually-hidden">Coffee House</h1>
           <div class="offer__container">
+            <video class="offer__video" autoplay loop muted>
+              <source type="video/webm" src="../../assets/video/video-coffee-webm.webm">
+              <source type="video/mp4" src="../../assets/video/video-coffee-mp4.mp4">
+            </video>
             <div class="offer__content">
               <h2 class="offer__title"><span class="offer__title-accent">Enjoy</span> premium coffee at our charming cafe</h2>
               <p class="offer__description">With its inviting atmosphere and delicious coffee options, the Coffee House Resource is a popular destination for coffee lovers and those seeking a warm and inviting space to enjoy their favorite beverage.</p>
@@ -66,10 +70,22 @@
               <p class="card__description">This new drink takes an espresso and mixes it with brown sugar and cinnamon before being topped with oat milk.</p>
               <p class="card__price">$5.50</p>
             </div>
+            <div class="slider__card card">
+              <img class="card__image" src="../../assets/images/coffee-slider-2.png" alt="Coffee Slide 2">
+              <h3 class="card__title">Caramel Macchiato</h3>
+              <p class="card__description">Fragrant and unique classic espresso with rich caramel-peanut syrup, with cream under whipped thick foam.</p>
+              <p class="card__price">$5.00</p>
+            </div>
+            <div class="slider__card card">
+              <img class="card__image" src="../../assets/images/coffee-slider-3.png" alt="Coffee Slide 3">
+              <h3 class="card__title">Ice coffee</h3>
+              <p class="card__description">A popular summer drink that tones and invigorates. Prepared from coffee, milk and ice.</p>
+              <p class="card__price">$4.50</p>
+            </div>
             <button class="slider__btn slider__btn--right"></button>
            </div>
            <div class="favorite-coffee__pagination pagination">
-            <div class="pagination__item pagination__item--active"></div>
+            <div class="pagination__item"></div>
             <div class="pagination__item"></div>
             <div class="pagination__item"></div>
            </div>
