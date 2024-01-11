@@ -13,6 +13,7 @@
     border-radius: 40px;
     @include media-tablet {
         padding-left: 60px;
+        padding-right: 60px;
     }
     @include media-mobile {
         padding: 60px 16px;
@@ -22,6 +23,9 @@
 
 .footer__container {
     flex: 0 1 530px;
+    @include media-tablet {
+        flex-basis: 100%;
+    }
 }
 
 .footer__title {

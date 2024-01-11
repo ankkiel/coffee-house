@@ -17,16 +17,17 @@
     transition: all 0.3s ease 0s;
 
     z-index: 100;
-    @media (max-width: 766px) {
+    @include media-tablet {
         display: none;
     }
 }
 
 .slider__btn--left {
-    left: 1rem;
+    left: 0;
+
     background: url(../../assets/images/arrow-right.svg) 50% 50% no-repeat;
 
-    transform: rotate(180deg);
+    transform: translateY(-50%) rotate(180deg);
 
     @include hover-desktop {
         &:hover {
@@ -39,7 +40,7 @@
 }
 
 .slider__btn--right {
-    right: 1rem;
+    right: 0;
 
     background: url(../../assets/images/arrow-right.svg) 50% 50% no-repeat;
     

@@ -35,17 +35,22 @@
     border-radius: 20px;
 
     overflow: hidden;
+
+    max-width: 660px;
+
     &--large {
-        width: 660px;
-        height: 590px;
+        max-height: 590px;
         @include media-tablet {
-            width: 100%;
+            max-width: 690px;
+        }
+        @include media-mobile {
+            max-width: 348px;
+            height: 590px;
         }
     }
 
     &--little {
-        width: 660px;
-        height: 430px;
+        max-height: 430px;
         @include media-tablet {
             display: none;
         }
@@ -53,6 +58,7 @@
 }
 
 .about__image {
+    max-width: 100%;
     transform: scale(1.1);
     transition: transform .5s;
     @include hover-desktop {
@@ -60,7 +66,11 @@
             transform: scale(1);
         }
     }
+    @include media-tablet {
+        max-width: 96%;
+    }
     @include media-mobile {
         transform: scale(2.1);
+        max-width: 100%;
     }
 }
